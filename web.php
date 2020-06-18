@@ -20,11 +20,12 @@ Route::group(['prefix' => 'admin'], function() {
 });
 
 //課題４
-Route::get('XXX', 'Admin\AAAController@bbb');
+//Route::get('XXX', 'Admin\AAAController@bbb');
+
 //課題５
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('profile/create', 'Admin\NewsController@add');
+    Route::get('profile/create', 'Admin\ProfileController@add');
 });
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('profile/edit', 'Admin\NewsController@edit');
+    Route::get('profile/edit', 'Admin\ProfileController@edit');
 });
